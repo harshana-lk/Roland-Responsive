@@ -297,8 +297,20 @@ body {
   font-weight: 500;
 }
 
-.btn-primary {
+.btn-product-categoey {
   background-color: rgb(255, 129, 57);
   color: white;
   border: none;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 200px;
+}
+
+.navbar-collapse {
+  z-index: 10000;
 }
