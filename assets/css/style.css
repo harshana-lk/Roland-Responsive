@@ -405,9 +405,84 @@ main .order-container .descriptions h2 {
 }
 
 .cash-out-top {
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 35px;
   border: 2px solid #00ffa3;
   padding: 25px 10px;
   padding-left: 30px;
+}
+
+.cash-out-bottom {
+  margin-top: 20px;
+  border-radius: 35px;
+  border: 2px solid #00ffa3;
+  /* padding: 25px 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 25px;
+  padding-left: 30px;
+}
+
+.cash-out-bottom input {
+  width: 90%;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #00ffa3;
+  border-radius: 35px;
+  padding: 10px 10px;
+}
+
+.cash-out-bottom h3 {
+  margin-bottom: 5px;
+}
+
+#btn-purchase {
+  color: #00ffa3;
+  font-weight: 700;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+main .descriptions .item-container input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #00ffa3;
+  border-radius: 35px;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+main .descriptions .item-container {
+  padding-top: 20px;
+}
+
+main .descriptions .item-container h3 {
+  margin-bottom: 5px;
+}
+
+#btn-add {
+  color: #00ffa3;
+  font-weight: 700;
+}
+
+main .descriptions .invoice-container input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #00ffa3;
+  border-radius: 35px;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+main .descriptions .invoice-container {
+  padding-top: 20px;
+}
+
+main .descriptions .invoice-container h3 {
+  margin-bottom: 5px;
 }
