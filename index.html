@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Material CDN  -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <!-- Style Sheet  -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Roland-Responsive</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Material CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- Style Sheet  -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Roland-Responsive</title>
+</head>
+
+<body>
+  <section class="dashboard-sec">
     <div class="container">
       <aside>
         <div class="top">
@@ -29,23 +27,23 @@
           </div>
         </div>
         <div class="sidebar">
-          <a href="#" class="active">
+          <a class="active dashboard">
             <span class="material-symbols-sharp"> grid_view </span>
             <h3>Dashboard</h3>
           </a>
-          <a href="product.html">
+          <a class="products">
             <span class="material-symbols-sharp"> inventory </span>
             <h3>Products</h3>
           </a>
-          <a href="customer.html">
+          <a class=" customer">
             <span class="material-symbols-sharp"> group </span>
             <h3>Customers</h3>
           </a>
-          <a href="order_now.html">
+          <a class="order-now">
             <span class="material-symbols-sharp"> shopping_cart </span>
             <h3>Order Now</h3>
           </a>
-          <a href="order_details.html">
+          <a class="order-details">
             <span class="material-symbols-sharp"> receipt_long </span>
             <h3>Order Details</h3>
           </a>
@@ -126,6 +124,7 @@
                 <th>Product Number</th>
                 <th>Payment</th>
                 <th>Status</th>
+
               </tr>
             </thead>
             <tbody>
@@ -134,49 +133,49 @@
                 <td>S-MX-101</td>
                 <td>Due</td>
                 <td class="warning">Pending</td>
-                <td><a href="#" class="primary">Details</a></td>
+
               </tr>
               <tr>
                 <td>Sony MX-101</td>
                 <td>S-MX-101</td>
                 <td>Due</td>
                 <td class="warning">Pending</td>
-                <td><a href="#" class="primary">Details</a></td>
+
               </tr>
               <tr>
                 <td>Sony MX-101</td>
                 <td>S-MX-101</td>
                 <td>Due</td>
                 <td class="warning">Pending</td>
-                <td><a href="#" class="primary">Details</a></td>
+
               </tr>
               <tr>
                 <td>Sony MX-101</td>
                 <td>S-MX-101</td>
                 <td>Due</td>
                 <td class="warning">Pending</td>
-                <td><a href="#" class="primary">Details</a></td>
+
               </tr>
               <tr>
                 <td>Sony MX-101</td>
                 <td>S-MX-101</td>
                 <td>Due</td>
                 <td class="warning">Pending</td>
-                <td><a href="#" class="primary">Details</a></td>
+
               </tr>
               <tr>
                 <td>Sony MX-101</td>
                 <td>S-MX-101</td>
                 <td>Due</td>
                 <td class="warning">Pending</td>
-                <td><a href="#" class="primary">Details</a></td>
+
               </tr>
               <tr>
                 <td>Sony MX-101</td>
                 <td>S-MX-101</td>
                 <td>Due</td>
                 <td class="warning">Pending</td>
-                <td><a href="#" class="primary">Details</a></td>
+
               </tr>
             </tbody>
           </table>
@@ -184,5 +183,458 @@
         </div>
       </main>
     </div>
-  </body>
+  </section>
+
+  <section class="products-sec">
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <h2>ROL<span class="span-logo">AND</span></h2>
+          </div>
+          <div class="close" id="btn-close">
+            <span class="material-symbols-sharp"> close </span>
+          </div>
+        </div>
+        <div class="sidebar">
+          <a class="dashboard">
+            <span class="material-symbols-sharp"> grid_view </span>
+            <h3>Dashboard</h3>
+          </a>
+          <a class="active products">
+            <span class="material-symbols-sharp"> inventory </span>
+            <h3>Products</h3>
+          </a>
+          <a class=" customer">
+            <span class="material-symbols-sharp"> group </span>
+            <h3>Customers</h3>
+          </a>
+          <a class="order-now">
+            <span class="material-symbols-sharp"> shopping_cart </span>
+            <h3>Order Now</h3>
+          </a>
+          <a class="order-details">
+            <span class="material-symbols-sharp"> receipt_long </span>
+            <h3>Order Details</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> logout </span>
+            <h3>Log Out</h3>
+          </a>
+        </div>
+      </aside>
+
+      <!-- ============================================================== END OF SIDEBAR ============================================================================== -->
+      <main>
+        <div class="main-container">
+          <h2 class="products-head">Recent Products</h2>
+          <div class="form-button-container">
+            <div class="form-container">
+              <div class="row g-3 my-2">
+                <form class="row g-3">
+                  <div class="col-md-4">
+                    <label for="itemID" class="form-label">Item ID</label>
+                    <input placeholder="Ex: I-0001" type="text" class="form-control" id="itemID" name="itemID" />
+                    <small id="duplicateError" class="text-danger"></small>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="name" class="form-label">Item Name</label>
+                    <input placeholder="Ex: rice" type="text" class="form-control" id="name" name="name" />
+                    <small id="nameError" class="text-danger"></small>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="qty" class="form-label">Item Qty</label>
+                    <input placeholder="Ex: 10kg" type="text" class="form-control" id="qty" name="qty" />
+                    <small id="qtyError" class="text-danger"></small>
+                  </div>
+                  <div class="col-12">
+                    <label for="price" class="form-label">Price</label>
+                    <input placeholder="Ex: 100.00" type="number" class="form-control" name="price" id="price" />
+                    <small id="priceError" class="text-danger"></small>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+            <div class="button-container">
+              <input type="button" value="Save" class="btn-save btns" />
+              <input type="button" value="Update" class="btn-update btns" />
+              <input type="button" value="Delete" class="btn-delete btns" />
+              <input type="button" value="Clear" class="btn-clear btns" />
+            </div>
+          </div>
+          <div class="product-container">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Item ID</th>
+                  <th scope="col">Item Name</th>
+                  <th scope="col">Item QTY</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody id="table_body">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </section>
+
+  <section class="customer-sec">
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <h2>ROL<span class="span-logo">AND</span></h2>
+          </div>
+          <div class="close" id="btn-close">
+            <span class="material-symbols-sharp"> close </span>
+          </div>
+        </div>
+        <div class="sidebar">
+          <a class=" dashboard">
+            <span class="material-symbols-sharp"> grid_view </span>
+            <h3>Dashboard</h3>
+          </a>
+          <a class=" products">
+            <span class="material-symbols-sharp"> inventory </span>
+            <h3>Products</h3>
+          </a>
+          <a class="active customer">
+            <span class="material-symbols-sharp"> group </span>
+            <h3>Customers</h3>
+          </a>
+          <a class="order-now">
+            <span class="material-symbols-sharp"> shopping_cart </span>
+            <h3>Order Now</h3>
+          </a>
+          <a class="order-details">
+            <span class="material-symbols-sharp"> receipt_long </span>
+            <h3>Order Details</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> logout </span>
+            <h3>Log Out</h3>
+          </a>
+        </div>
+      </aside>
+
+      <!-- ============================================================== END OF SIDEBAR ============================================================================== -->
+      <main>
+        <div class="main-container">
+          <h2 class="products-head">Recent Customers</h2>
+          <div class="form-button-container">
+            <div class="form-container">
+              <div class="row g-3 my-2">
+                <form class="row g-3">
+                  <div class="col-md-4">
+                    <label for="custID" class="form-label">Customer ID</label>
+                    <input placeholder="Ex: C-001" type="text" class="form-control" id="custID" name="custID" />
+                    <small id="duplicateError" class="text-danger"></small>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="fName" class="form-label">First Name</label>
+                    <input placeholder="Ex:Harshana" type="text" class="form-control" id="fName" name="fName" />
+                    <small id="fNameError" class="text-danger"></small>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="lName" class="form-label">Last Name</label>
+                    <input placeholder="Ex:Jayaweera" type="text" class="form-control" id="lName" name="lName" />
+                    <small id="lNameError" class="text-danger"></small>
+                  </div>
+                  <div class="col-12">
+                    <label for="address" class="form-label">Address</label>
+                    <input placeholder="Ex:Mahiyanganaya" type="text" class="form-control" id="address"
+                      name="address" />
+
+                    <small id="addressError" class="text-danger"></small>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+            <div class="button-container">
+              <input type="button" value="Save" class="btn-save btns" />
+              <input type="button" value="Update" class="btn-update btns" />
+              <input type="button" value="Delete" class="btn-delete btns" />
+              <input type="button" value="Clear" class="btn-clear btns" />
+            </div>
+          </div>
+
+          <div class="product-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Customer ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Address</th>
+                </tr>
+              </thead>
+              <tbody id="table_body">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </section>
+
+  <section class="order-now-sec">
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <h2>ROL<span class="span-logo">AND</span></h2>
+          </div>
+          <div class="close" id="btn-close">
+            <span class="material-symbols-sharp"> close </span>
+          </div>
+        </div>
+        <div class="sidebar">
+          <a class=" dashboard">
+            <span class="material-symbols-sharp"> grid_view </span>
+            <h3>Dashboard</h3>
+          </a>
+          <a class=" products">
+            <span class="material-symbols-sharp"> inventory </span>
+            <h3>Products</h3>
+          </a>
+          <a class=" customer">
+            <span class="material-symbols-sharp"> group </span>
+            <h3>Customers</h3>
+          </a>
+          <a class="active order-now">
+            <span class="material-symbols-sharp"> shopping_cart </span>
+            <h3>Order Now</h3>
+          </a>
+          <a class="order-details">
+            <span class="material-symbols-sharp"> receipt_long </span>
+            <h3>Order Details</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> logout </span>
+            <h3>Log Out</h3>
+          </a>
+        </div>
+      </aside>
+      <main>
+        <h2>Order Now</h2>
+        <div class="order-container">
+          <div class="descriptions">
+            <!-- <h2>Invoice Details</h2> -->
+            <div class="invoice-container">
+              <div class="row g-3 my-2">
+                <form class="row g-3 orderform-container">
+                  <div class="col-md-4">
+                    <label for="orderID" class="form-label">Order ID</label>
+                    <input placeholder="Ex: O-001" type="text" class="form-control" id="orderID" name="orderID" />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="customerID" class="form-label">Customer ID</label>
+                    <select class="form-select" id="customerID" name="customerID">
+                      <option value="" disabled selected hidden>Select a Customer</option>
+                    </select>
+                    <small id="error" class="text-danger"></small>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="custName" class="form-label">Customer Name</label>
+                    <input placeholder="Ex: Kamal" type="text" class="form-control" id="custName" name="custName" />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="itemID" class="form-label">Item ID</label>
+                    <select class="form-select" id="itemID" name="itemID">
+                      <option value="" disabled selected hidden>Select Items</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="itemName" class="form-label">Item Name</label>
+                    <input placeholder="Ex: 5" type="text" class="form-control" id="itemName" name="itemName" />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="quantity" class="form-label">Quantity</label>
+                    <input placeholder="Ex: 5" type="number" class="form-control" id="quantity" name="quantity" />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="price" class="form-label">Price</label>
+                    <input placeholder="Ex: 5" type="number" class="form-control" id="price" name="price" />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="total" class="form-label">Total</label>
+                    <input placeholder="Ex: 50.00" type="number" step="0.01" class="form-control" id="total"
+                      name="total" readonly />
+                  </div>
+
+                </form>
+                <div class="orderBtn-container">
+                  <button type="button" class="btn btn-primary btn-save orderbtn" id="addBtn">
+                    Add
+                  </button>
+                  <button type="submit" class="btn btn-success btn-update orderbtn" id="updateBtn">Update</button>
+                  <button type="submit" class="btn btn-danger btn-delete orderbtn" id="deleteBtn">Delete</button>
+                  <button type="submit" class="btn btn-outline-dark btn-clear orderbtn" id="clearBtn">Clear</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="product-container">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Order ID</th>
+                <th scope="col">Customer ID</th>
+                <th scope="col">Item ID</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="table_body">
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="total-container">
+          <div class="col-md-4">
+            <label for="total" class="total-label">Total:</label>
+          </div>
+          <div class="col-md-4">
+            <input type="number" step="0.01" class="total-input" id="orderTotal" name="total" readonly />
+          </div>
+          <div class="col-4">
+            <button type="button" class="btn-total" id="addOrderBtn">
+              Add Order
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <section class="order-details-sec">
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <h2>ROL<span class="span-logo">AND</span></h2>
+          </div>
+          <div class="close" id="btn-close">
+            <span class="material-symbols-sharp"> close </span>
+          </div>
+        </div>
+        <div class="sidebar">
+          <a class=" dashboard">
+            <span class="material-symbols-sharp"> grid_view </span>
+            <h3>Dashboard</h3>
+          </a>
+          <a class=" products">
+            <span class="material-symbols-sharp"> inventory </span>
+            <h3>Products</h3>
+          </a>
+          <a class=" customer">
+            <span class="material-symbols-sharp"> group </span>
+            <h3>Customers</h3>
+          </a>
+          <a class=" order-now">
+            <span class="material-symbols-sharp"> shopping_cart </span>
+            <h3>Order Now</h3>
+          </a>
+          <a class="active order-details">
+            <span class="material-symbols-sharp"> receipt_long </span>
+            <h3>Order Details</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-sharp"> logout </span>
+            <h3>Log Out</h3>
+          </a>
+        </div>
+      </aside>
+
+      <!-- ============================================================== END OF SIDEBAR ============================================================================== -->
+      <main>
+        <div class="main-container">
+          <h2 class="products-head">Order Details</h2>
+          <div class="product-container">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Order ID</th>
+                  <th scope="col">Customer ID</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="order_table_body">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script src="Controller/customerController.js" type="module"></script>
+  <script src="Controller/itemController.js" type="module"></script>
+  <script src="Controller/orderClassController.js " type="module"></script>
+  <script src="Controller/orderController.js" type="module"></script>
+
+  <script>
+    let dashboard = document.querySelector('.dashboard-sec');
+    let products = document.querySelector('.products-sec');
+    let customer = document.querySelector('.customer-sec');
+    let orderNow = document.querySelector('.order-now-sec');
+    let orderDetails = document.querySelector('.order-details-sec');
+
+
+    document.addEventListener('click', function (e) {
+      const classList = [...e.target.classList]
+      console.log(classList);
+      if (classList.includes('dashboard')) {
+        dashboard.style.display = "block";
+        products.style.display = "none";
+        customer.style.display = "none";
+        orderNow.style.display = "none";
+        orderDetails.style.display = "none";
+      }
+      if (classList.includes('products')) {
+        products.style.display = "block";
+        dashboard.style.display = "none";
+        customer.style.display = "none";
+        orderNow.style.display = "none";
+        orderDetails.style.display = "none";
+      }
+      if (classList.includes('customer')) {
+        customer.style.display = "block";
+        products.style.display = "none";
+        dashboard.style.display = "none";
+        orderNow.style.display = "none";
+        orderDetails.style.display = "none";
+      }
+      if (classList.includes('order-now')) {
+        orderNow.style.display = "block";
+        products.style.display = "none";
+        customer.style.display = "none";
+        dashboard.style.display = "none";
+        orderDetails.style.display = "none";
+      }
+      if (classList.includes('order-details')) {
+        orderDetails.style.display = "block";
+        products.style.display = "none";
+        customer.style.display = "none";
+        orderNow.style.display = "none";
+        dashboard.style.display = "none";
+      }
+    });
+  </script>
+</body>
+
 </html>
